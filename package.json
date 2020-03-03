@@ -29,6 +29,7 @@
   "scripts": {
     "postpublish": "grunt clean",
     "prepublish": "grunt test coffee",
+    "postinstall": "grunt coffee",
     "test": "grunt test"
   },
   "dependencies": {

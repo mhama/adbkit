@@ -3,9 +3,9 @@
 /*.tgz
 /npm-debug.log
 /Gruntfile.coffee
-/index.coffee
+#/index.coffee
 /CONTRIBUTING.md
-/src/
+#/src/
 /test/
 /bench/
 /tasks/

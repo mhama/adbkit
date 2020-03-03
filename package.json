@@ -29,12 +29,14 @@
   "scripts": {
     "postpublish": "grunt clean",
     "prepublish": "grunt test coffee",
+    "postinstall": "coffee -bco lib/ src/ && coffee -bc index.coffee",
     "test": "grunt test"
   },
   "dependencies": {
     "adbkit-logcat": "^1.1.0",
     "adbkit-monkey": "~1.0.1",
     "bluebird": "~2.9.24",
+    "coffee-script": "~1.9.1",
     "commander": "^2.3.0",
     "debug": "~2.6.3",
     "node-forge": "^0.7.1",
@@ -43,7 +45,6 @@
   "devDependencies": {
     "bench": "~0.3.5",
     "chai": "~2.2.0",
-    "coffee-script": "~1.9.1",
     "grunt": "~0.4.5",
     "grunt-cli": "~0.1.13",
     "grunt-coffeelint": "0.0.13",
